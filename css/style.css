@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Source+Serif+Pro&display=swap');
+
+*  {
+    box-sizing: border-box;
+
+}
+
+body{
+    margin: 0px;
+    font-family: 'Gentium Book Plus', serif;
+    font-size: 17px;
+
+}
+
+main {
+    min-height: 100vh;
+}
+
+
+header {
+background: #363636 ;
+position: fixed;
+width: 100%;
+top: 0;
+padding: 10px 15px 5px 15px;
+
+}
+
+navbar {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+    overflow: auto;
+}
+
+navbar a {
+color: white;
+text-decoration: none;
+margin-right: 20px;
+font-size: 20px;
+
+}
+
+navbar a:hover {
+color: #A8A7A7;
+text-decoration: underline 1px;
+}
+
+footer {
+    min-height: 80px;
+    background-color: #363636 ;
+    text-align: center;
+    color: white;
+    padding-top: 35px;
+}
+p {
+    line-height: 150%;
+    text-indent: 30px;
+
+}
+li {
+    margin-top: 10px;
+    padding-left: 15px;
+    list-style-image: linear-gradient(#fa9483, #fa9483);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+h1 {
+    font-size: 250%;
+}
+h2 {
+    font-size: 200%;
+}
+
+section {
+    padding: 90px 15%;
+
+}
+
+.logo {
+    height: 50px;
+}
+#index {
+   background-image: linear-gradient(#0000009a, #00000077), url("../images/fundal1.jpg");
+   background-size:cover;
+   min-height: 100vh;
+
+}
+
+.index-info {
+margin-top: 25vh;
+text-align: center;
+
+}
+.index-info h1 {
+    font-size: 250%;
+    color: white;
+    border: 2px solid gray;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #363636b4;
+}
+
+.link-index {
+    color: white;
+    text-decoration: underline #CC527A 2px;
+    font-size: 20px;
+}
+.link-index:hover {
+    color: #928d8d;
+}
+.centered {
+    text-align: center;
+}
+.vframe {
+    width: 100%;
+    height: 30vw;
+    border: 2px solid #CC527A ;
+    border-radius: 5px;
+    box-shadow: #CC527A  0px 7px 29px 0px;
+}
+.activitati {
+overflow: auto;
+border-bottom: 2px #CC527A dashed;
+margin-bottom: 20px;
+}
+
+.activitati img {
+height: 20vh;
+width: 20vh;
+object-fit: cover;
+border-radius: 50%;
+float: left;
+margin-right: 15px;
+margin-bottom: 15px;
+}
+
+.harta {
+    width: 100%;
+    height: 40vh;
+    border: 4px solid #CC527A;
+    border-radius: 5px;
+}
+.row {
+overflow: auto;
+}
+
+[class^=col-] {
+    float: left;
+    padding: 0px 10px;
+}
+
+.col-50 {
+    width: 50%;
+    
+}
+.contacte, .cform {
+    border: 2px solid #e9ceb4;
+    border-radius: 5px;
+    background-color: #f3ddc934;
+    padding: 5px 5%;
+    height: 370px;
+    margin-bottom: 15px;
+
+}
+
+.cform input, .cform textarea {
+    width: 100%;
+    font-size: 15px;
+    font-family: inherit;
+    margin-bottom: 10px;
+    padding: 4px 6px;
+    margin-bottom: 15px;
+}
+
+#hamburger {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    right: 22px;
+    top: 24px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/*media trebuie să fie la sfîrșitul fișierului*/
+
+@media (max-width: 800px) {
+    body {
+        font-size: 16;
+    }
+
+    section {
+        padding: 90px 10px;
+    }
+
+    .index-info h1 {
+        font-size: 200%;
+    }
+    .vframe {
+        height: 45vw;
+    }
+
+    [class^=col-] {
+        width: 100% !important;
+    }
+
+    navbar a {
+        display: none;
+    }
+    
+    navbar.mobile a {
+        display: block;
+        text-align: center;
+        margin-top: 12px;
+
+    }
+    navbar {
+        display: block;
+    }
+
+
+    #hamburger {
+        display: block;
+    }
+}
